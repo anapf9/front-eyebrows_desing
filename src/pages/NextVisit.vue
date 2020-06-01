@@ -1,10 +1,14 @@
 <template>
+<div>
+  Próximo agendamento
+</div>
 
 </template>
 
 <script>
 export default {
-  name: 'Credits and Indications'
+  name: 'NextVisit'
+
 }
 </script>
 

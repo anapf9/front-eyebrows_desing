@@ -1,10 +1,13 @@
 <template>
+<div>
+  Histórico de Procedimentos
+</div>
 
 </template>
 
 <script>
 export default {
-  name: 'Profile'
+  name: 'HistoryProcedure'
 }
 </script>
 

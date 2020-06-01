@@ -39,6 +39,8 @@
     </q-drawer>
 
     <q-page-container>
+      <router-link :to="{ name: 'next-visit' }">next-visit</router-link> |
+      <router-link :to="{ name: 'history-procedure' }">history-procedure</router-link>
       <router-view />
     </q-page-container>
   </q-layout>
@@ -49,7 +51,6 @@ import EssentialLink from 'components/EssentialLink'
 
 export default {
   name: 'MainLayout',
-
   components: {
     EssentialLink
   },

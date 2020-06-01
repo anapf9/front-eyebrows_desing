@@ -1,10 +1,13 @@
 <template>
+<div>
+  Desenvolvedora
+</div>
 
 </template>
 
 <script>
 export default {
-name: 'Points Exchange'
+  name: 'Developer'
 }
 </script>
 

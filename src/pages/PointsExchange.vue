@@ -1,10 +1,13 @@
 <template>
+<div>
+  Troca de pontos
+</div>
 
 </template>
 
 <script>
 export default {
-  name: 'Developer'
+  name: 'Points Exchange'
 }
 </script>
 
