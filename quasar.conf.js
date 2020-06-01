@@ -63,11 +63,31 @@ module.exports = function (/* ctx */) {
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+        'QDate',
+        'QTime',
+        'QCard',
+        'QCardSection',
+        'QCardActions',
+        'QDialog',
+        'QSelect',
+        'QInput',
+        'QForm',
+        'QKnob',
+        'QParallax',
+        'QRating',
+        'QResponsive',
+        'QSpinnerHearts',
+        'QStepper',
+        'QStep',
+        'QStepperNavigation',
+        'QTabPanels',
+        'QTabPanel'
       ],
 
       directives: [
-        'Ripple'
+        'Ripple',
+        'ClosePopup'
       ],
 
       // Quasar plugins
@@ -85,7 +105,7 @@ module.exports = function (/* ctx */) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
+      vueRouterMode: 'history', // available values: 'hash', 'history'
 
       // modern: true, // https://quasar.dev/quasar-cli/modern-build
       // rtl: false, // https://quasar.dev/options/rtl-support
