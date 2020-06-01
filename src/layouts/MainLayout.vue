@@ -12,7 +12,9 @@
         />
 
         <q-toolbar-title>
+          <router-link :to="{ name: 'home' }">
           Dayci Sobrancelhas
+          </router-link>
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -21,7 +23,7 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-grey-1"
+      content-class="bg-pink-5"
     >
       <q-list>
         <q-item-label
@@ -39,8 +41,6 @@
     </q-drawer>
 
     <q-page-container>
-      <router-link :to="{ name: 'next-visit' }">next-visit</router-link> |
-      <router-link :to="{ name: 'history-procedure' }">history-procedure</router-link>
       <router-view />
     </q-page-container>
   </q-layout>
