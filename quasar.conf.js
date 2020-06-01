@@ -64,6 +64,7 @@ module.exports = function (/* ctx */) {
         'QItem',
         'QItemSection',
         'QItemLabel',
+        'QImg',
         'QDate',
         'QTime',
         'QCard',
