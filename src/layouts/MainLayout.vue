@@ -23,7 +23,7 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-pink-5"
+      content-class=""
     >
       <q-list>
         <q-item-label

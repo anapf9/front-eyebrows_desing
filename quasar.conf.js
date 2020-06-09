@@ -84,7 +84,9 @@ module.exports = function (/* ctx */) {
         'QStepperNavigation',
         'QTabPanels',
         'QTabPanel',
-        'QCheckbox'
+        'QCheckbox',
+        'QAvatar',
+        'QSeparator'
       ],
 
       directives: [
