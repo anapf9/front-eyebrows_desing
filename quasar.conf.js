@@ -84,6 +84,9 @@ module.exports = function (/* ctx */) {
         'QStepperNavigation',
         'QTabPanels',
         'QTabPanel',
+        'QTabs',
+        'QTab',
+        'QRouteTab',
         'QCheckbox',
         'QAvatar',
         'QSeparator'
