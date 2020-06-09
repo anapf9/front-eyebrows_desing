@@ -63,7 +63,7 @@ export default {
           title: 'Agende sua Próxima Visita',
           caption: 'quasar.dev',
           icon: 'school',
-          link: 'https://quasar.dev'
+          link: '/sua_proxima_visita'
         },
         {
           title: 'Histórico de Procedimentos',
