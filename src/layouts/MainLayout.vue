@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
+    <q-header color="pink-4" elevated>
+      <q-toolbar >
         <q-btn
           flat
           dense
@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          <router-link :to="{ name: 'home' }">
+          <router-link class="event-link" :to="{ name: 'home' }">
           Dayci Sobrancelhas
           </router-link>
         </q-toolbar-title>
@@ -61,39 +61,33 @@ export default {
       essentialLinks: [
         {
           title: 'Agende sua Próxima Visita',
-          caption: 'quasar.dev',
           icon: 'school',
           link: '/sua_proxima_visita'
         },
         {
           title: 'Histórico de Procedimentos',
-          caption: 'github.com/quasarframework',
           icon: 'code',
-          link: 'https://github.com/quasarframework'
+          link: '/historico_de_procedimentos'
         },
         {
           title: 'Indicações e Créditos',
-          caption: 'chat.quasar.dev',
           icon: 'chat',
-          link: 'https://chat.quasar.dev'
+          link: '/indicacoes_e_creditos'
         },
         {
           title: 'Troca de Pontos',
-          caption: 'forum.quasar.dev',
           icon: 'record_voice_over',
-          link: 'https://forum.quasar.dev'
+          link: '/troca_de_pontos'
         },
         {
           title: 'Dados Cadastrais',
-          caption: '@quasarframework',
           icon: 'rss_feed',
-          link: 'https://twitter.quasar.dev'
+          link: '/dados_cadastrais'
         },
         {
           title: 'Desenvolvedora do Projeto',
-          caption: '@QuasarFramework',
           icon: 'public',
-          link: 'https://facebook.quasar.dev'
+          link: '/desenvolvedora_do_projeto'
         }
       ]
     }

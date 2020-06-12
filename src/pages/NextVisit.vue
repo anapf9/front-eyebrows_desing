@@ -1,15 +1,13 @@
 <template>
-  <div class="fit column wrap content-center">
+  <div class="fit column wrap justify-center content-center">
     Próximo agendamento
-    <q-select standout="bg-pink-5 text-white" v-model="model" :options="options" label="Escolha o serviço desejado" />
+    <q-select class="q-pa-md" standout="bg-pink-5 text-white" v-model="model" :options="options" label="Escolha o serviço desejado" />
     <Calendar />
-    <q-btn class="px-2 py-2" color="pink-5" push>
-      <div class="row items-center wrap">
+    <q-btn class="q-pa-sm q-mt-md self-center" color="pink-5" push>
         <q-icon left name="card_giftcard" />
         <div class="text-center">
           Confirmar Agendamento
         </div>
-      </div>
     </q-btn>
   </div>
 </template>

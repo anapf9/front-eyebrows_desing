@@ -1,6 +1,6 @@
 <template>
-  <div class="q-pa-md">
-    <div class="q-gutter-md row items-start">
+  <div class="q-pa-md ">
+    <div class="q-gutter-md row items-center justify-center">
       <q-date v-model="date" mask="YYYY-MM-DD HH:mm" color="pink-5" />
       <q-time v-model="date" mask="YYYY-MM-DD HH:mm" color="pink-5" />
     </div>

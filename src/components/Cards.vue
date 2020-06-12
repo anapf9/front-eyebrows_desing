@@ -25,11 +25,6 @@ export default {
 </script>
 
 <style>
-.event-link {
-  color: black;
-  text-decoration: none;
-  font-weight: 100;
-}
 .event-card {
   padding: 20px;
   margin-bottom: 24px;

@@ -1,7 +1,8 @@
 <template>
-  <q-page>
-    <div class="q-pa-md row items-start content-center justify-center q-gutter-md ">
+  <q-page class="q-ma-md">
+    <div class="row items-start content-center justify-center q-gutter-md q-mt-sm ">
     <q-card class="my-card event-card" v-for="links in essentialLinks" :key="links.link" >
+        <router-link class="event-link" :to="`${links.link}`">
       <q-card-section horizontal>
         <img
           class="col"
@@ -12,6 +13,7 @@
           {{ links.title }}
         </q-card-section>
       </q-card-section>
+        </router-link>
     </q-card>
       <!-- <Cards v-for="links in essentialLinks" :key="links.link" :menu="links" /> -->
     </div>
@@ -34,7 +36,7 @@ export default {
         },
         {
           title: 'Histórico de Procedimentos',
-          svg: '../assets/illustrations/undraw_Booked_j7rj.svg',
+          svg: '~assets/illustrations/undraw_Booked_j7rj.svg',
           link: '/historico_de_procedimentos'
         },
         {
@@ -65,7 +67,6 @@ export default {
 <style>
 .event-card {
   padding: 20px;
-  margin-bottom: 24px;
   transition: all 0.2s linear;
   cursor: pointer;
   width: 500px;
