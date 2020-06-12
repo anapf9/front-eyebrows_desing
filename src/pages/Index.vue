@@ -6,7 +6,7 @@
       <q-card-section horizontal>
         <img
           class="col"
-          src="~assets/illustrations/undraw_attached_file_n4wm.svg"
+          :src="links.svg"
         />
 
         <q-card-section class="col text-h6 self-end">
@@ -31,33 +31,23 @@ export default {
       essentialLinks: [
         {
           title: 'Agende sua Próxima Visita',
-          svg: '~assets/illustrations/undraw_attached_file_n4wm.svg',
+          svg: 'statics/illustrations/undraw_Booked_j7rj.svg',
           link: '/sua_proxima_visita'
         },
         {
           title: 'Histórico de Procedimentos',
-          svg: '~assets/illustrations/undraw_Booked_j7rj.svg',
+          svg: 'statics/illustrations/undraw_terms_lso0.svg',
           link: '/historico_de_procedimentos'
         },
         {
           title: 'Indicações e Créditos',
-          svg: './../assets/illustrations/undraw_Booked_j7rj.svg',
+          svg: 'statics/illustrations/undraw_share_766i.svg',
           link: '/indicacoes_e_creditos'
         },
         {
           title: 'Troca de Pontos',
-          svg: 'undraw_Booked_j7rj',
+          svg: 'statics/illustrations/undraw_gift_card_6ekc.svg',
           link: '/troca_de_pontos'
-        },
-        {
-          title: 'Dados Cadastrais',
-          svg: 'undraw_Booked_j7rj',
-          link: '/dados_cadastrais'
-        },
-        {
-          title: 'Desenvolvedora do Projeto',
-          svg: 'undraw_Booked_j7rj',
-          link: '/desenvolvedora_do_projeto'
         }
       ]
     }
