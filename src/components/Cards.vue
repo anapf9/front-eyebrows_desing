@@ -4,7 +4,7 @@
       <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden">
           <svg
             alt="Quasar logo"
-            :src="`@/assets/illustrations/${menu.svg}.svg`"
+            :src="`~/assets/illustrations/${menu.svg}.svg`"
           />
       </div>
       <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col leading-normal">

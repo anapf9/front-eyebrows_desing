@@ -12,7 +12,7 @@ const routes = [
     path: '/',
     component: MainLayout,
     children: [
-      { path: 'home', name: 'home', component: Home },
+      { path: '', name: 'home', component: Home },
       { path: 'sua_proxima_visita', name: 'next-visit', component: NextVisit },
       { path: 'historico_de_procedimentos', name: 'history-procedure', component: HistoryProcedure },
       { path: 'indicacoes_e_creditos', name: 'credits-and-indications', component: CreditsAndIndications },

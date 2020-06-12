@@ -1,45 +1,45 @@
 <template>
   <q-page>
-    <div class="event-card max-w-sm rounded overflow-hidden shadow-lg w-full lg:flex items-end">
-      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden">
-          <img
-            alt="Quasar logo"
-            src="~assets/illustrations/undraw_Booked_j7rj.svg"
-          >
-      </div>
-      <div class=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col leading-normal">
-          <div class="flex-1 text-gray-900 font-bold text-right text-xl ">
-            Agende a sua próxima visita! tete
-          </div>
-      </div>
+    <div class="q-pa-md row items-start content-center justify-center q-gutter-md ">
+    <q-card class="my-card event-card" v-for="links in essentialLinks" :key="links.link" >
+      <q-card-section horizontal>
+        <img
+          class="col"
+          src="~assets/illustrations/undraw_attached_file_n4wm.svg"
+        />
+
+        <q-card-section class="col text-h6 self-end">
+          {{ links.title }}
+        </q-card-section>
+      </q-card-section>
+    </q-card>
+      <!-- <Cards v-for="links in essentialLinks" :key="links.link" :menu="links" /> -->
     </div>
-    <Cards v-for="links in essentialLinks" :key="links.link" :menu="links" />
   </q-page>
 </template>
-
 <script>
-import Cards from 'src/components/Cards.vue'
+// import Cards from 'src/components/Cards.vue'
 export default {
   name: 'PageIndex',
   components: {
-    Cards
+  //  Cards
   },
   data () {
     return {
       essentialLinks: [
         {
           title: 'Agende sua Próxima Visita',
-          svg: 'undraw_attached_file_n4wm',
+          svg: '~assets/illustrations/undraw_attached_file_n4wm.svg',
           link: '/sua_proxima_visita'
         },
         {
           title: 'Histórico de Procedimentos',
-          svg: 'undraw_Booked_j7rj',
+          svg: '../assets/illustrations/undraw_Booked_j7rj.svg',
           link: '/historico_de_procedimentos'
         },
         {
           title: 'Indicações e Créditos',
-          svg: 'undraw_Booked_j7rj',
+          svg: './../assets/illustrations/undraw_Booked_j7rj.svg',
           link: '/indicacoes_e_creditos'
         },
         {
@@ -63,14 +63,15 @@ export default {
 }
 </script>
 <style>
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 .event-card {
   padding: 20px;
   margin-bottom: 24px;
   transition: all 0.2s linear;
   cursor: pointer;
+  width: 500px;
+  height: 200px;
+  border-radius: 5px;
+
 }
 .event-card:hover {
   transform: scale(1.01);
@@ -84,4 +85,17 @@ export default {
   text-decoration: none;
   font-weight: 100;
 }
+h5 {
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+}
+img{
+  width: auto;
+  max-width: 150px;
+  height: auto;
+  max-height: 150px;
+  overflow: hidden;
+}
+
 </style>

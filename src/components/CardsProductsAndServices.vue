@@ -1,5 +1,5 @@
 <template>
-  <div class="q-px-md q-py-md ">
+  <div class="q-px-md q-py-md row justify-center ">
     <q-card class="my-card">
       <img :src="values.img">
       <q-card-section>
