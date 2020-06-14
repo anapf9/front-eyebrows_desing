@@ -4,23 +4,24 @@
 
       <q-card-section>
         <q-btn
-          fab
+          round
           color="primary"
           icon="share"
           class="absolute"
+          size="sm"
           style="top: 0; right: 12px; transform: translateY(-50%);"
         />
 
         <div class="row no-wrap items-center">
+          <br>
           <div class="col text-h6 ellipsis">
             Nome do Procedimento
           </div>
           <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">
-            Compartilhe
           </div>
         </div>
 
-        <q-rating v-model="stars" :max="5" size="32px" /> Ou avalie
+        <q-rating v-model="stars" :max="5" size="20px" />
       </q-card-section>
       <q-separator />
 
@@ -46,5 +47,4 @@ export default {
 </script>
 
 <style>
-
 </style>

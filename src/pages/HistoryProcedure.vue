@@ -1,9 +1,10 @@
 <template>
-<div>
-  Histórico de Procedimentos
-  <CardProcedures class="m-5" v-for="n in 3" :key="n" />
-</div>
-
+  <div>
+      Histórico de Procedimentos
+    <div class="fit row wrap justify-center content-center">
+      <CardProcedures class="q-ma-sm" v-for="n in 3" :key="n" />
+    </div>
+  </div>
 </template>
 
 <script>

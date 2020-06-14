@@ -4,8 +4,8 @@
       <q-card>
         <q-tabs
           v-model="tab"
-          dense
-          class="text-grey"
+          class="text-white"
+          style="background-color: #671454;"
           active-color="primary"
           indicator-color="primary"
           align="justify"
