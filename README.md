@@ -1,7 +1,3 @@
-# Dayci App (daycipwa)
-
-Desingner de Sobrancelhas
-
 ## Install the dependencies
 ```bash
 npm install
